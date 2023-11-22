@@ -1,0 +1,432 @@
+*{
+        
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html, body {
+    
+    margin: 0;
+    padding: 0;
+    background-color: #ebebeb;
+
+}
+
+
+
+
+/* NAVEGADOR */
+
+header {
+    display: flex;
+    width: 100%;
+    background-color: #eac926;
+    padding: 0.5rem;
+    flex-direction: column;
+}
+
+
+.logo-container {
+    width: 100%;
+    display: flex;
+    margin-bottom: 5px;
+
+}
+
+.logo {
+    width: 50%;
+    padding-right: 1rem;
+}
+
+.search-bar {
+    width: 40%;
+    display: none;
+    align-items: center;
+    margin-right: 0px;
+    padding-left: 2rem;
+}
+
+.barra-busqueda {
+    width: 90%;
+    height: 2rem;
+
+}
+
+.lupa {
+    height: 2rem;
+    width: 2rem;
+
+}
+
+.nav-title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    font-style: bold;
+    margin-bottom: 0.5rem;
+
+}
+
+.nav-bar {
+    display: none;
+    width: 100%;
+    flex-wrap: nowrap;
+    margin-top: 15px;
+    justify-content: space-between;
+}
+
+.left-nav-bar {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    width: 40%;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.right-nav-bar {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    width: 40%;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.burger-menu {
+    width: 1.5rem;
+    text-align: center;
+    margin: auto;
+}
+
+
+.fa-bars {
+    padding: 10px;
+    background-color: #1259c3;
+    color: white;
+    border-radius: 5px;
+}
+
+.fa-magnifying-glass {
+    width: 1.5rem;
+}
+
+ul a,
+li {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+
+
+/* NAVEGADOR */
+
+
+
+
+
+main {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    /* flex properties */
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+
+}
+
+.title h1 {
+
+    color: #1259c3;
+
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+
+    width: 70vw;
+    margin: auto;
+    padding: 1rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+}
+
+.login-url {
+    padding-left: 0.5rem;
+
+}
+
+.nombre-usuario-email-fecha-domicilio, .perfildelusuario-intereses {
+    background-color: #bebebe;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+
+    width: 100%;
+    padding: 0.5rem;
+}
+.input-formulario1, .input-formulario2, .input-formulario3, .input-formulario4, .input-formulario5 {
+
+/* (defino el tamaño en rem y %) ---> (de TODOS los inputs de la seccion1) */
+width: 60vw;
+height: 3.5rem;
+font-size: 1.5rem;
+
+}
+
+.input-formulario1 {
+    margin: 0.8rem;
+    margin-bottom: 4rem;
+}
+
+.input-formulario2 {
+    margin: 0.8rem;
+    margin-bottom: 4rem;
+
+}
+
+.input-formulario3 {
+    margin: 0.8rem;
+}
+
+.input-formulario4 {
+    margin: 0.8rem;
+    margin-bottom: 4rem;
+
+}
+
+.input-formulario5 {
+    margin: 0.8rem;
+    margin-bottom: 4rem;
+
+}
+
+.form-title {
+    display: flex;
+    margin: 1.5rem;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+/* (primer seccion formulario) */
+
+.radio-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+
+    margin-left: 4rem;
+}
+
+.Intereses-row-filas {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contenedor-input-checkbox-intereses {
+    position: absolute;
+}
+
+.input-formulario-intereses {
+    position: absolute;
+    left: -70px;
+    top: 5px;
+    margin: auto;
+
+}
+
+.perfildelusuario-intereses p {
+    font-size: 1.3rem;
+
+}
+
+
+
+
+
+
+/* MAIN */
+
+
+
+
+
+
+/* FOOTER */
+
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-left: 0.5rem;
+    padding-bottom: 0.5rem;
+
+}
+
+.footer .footer-content {
+    width: 30%;
+
+}
+
+.footer-content i {
+    display: flex;
+    font-size: 50px;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 2.5rem;
+    padding-right: 0.5rem;
+
+}
+
+.footer-icon {
+    width: 100%;
+    height: 80px;
+    border-bottom: 0.1rem solid;
+    color: gray;
+
+}
+
+.copyright-footer {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    padding-top: 1rem;
+}
+
+
+
+
+
+/* MEDIA QUERIES */
+
+@media(min-width:769px) {
+    /* tablets */
+
+    .nav-bar {
+        display: flex;
+
+    }
+
+    .burger-menu {
+        display: none;
+
+    }
+
+    .barra-busqueda {
+        width: 100%;
+
+    }
+
+    .logo-container {
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .logo {
+        padding-right: 0rem;
+        padding: 1rem;
+
+    }
+
+    .search-bar {
+        display: flex;
+        width: 30%;
+    }
+
+    .lupa {
+        width: 2rem;
+
+    }
+
+    .footer-icon:hover {
+        color: #1259c3;
+    }
+
+}
+
+@media(min-width:1024px) {
+    /* desktop */
+
+    .header {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+
+    }
+
+    .nav-bar {
+        display: flex;
+
+    }
+
+    .burger-menu {
+        display: none;
+
+    }
+
+    .barra-busqueda {
+        width: 10rem;
+
+    }
+
+    .logo-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .logo {
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        padding-right: 0;
+    }
+
+    .search-bar {
+        display: flex;
+        justify-self: flex-end;
+        align-self: flex-end;
+
+        /* flex properties */
+
+        width: 5%;
+
+    }
+
+    .banner-container img {
+        margin-bottom: 15px;
+
+    }
+
+
+}
