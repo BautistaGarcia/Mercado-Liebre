@@ -4,23 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>login</title>
     <link rel="stylesheet" href="/styles/login.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="shortcut icon" href="/img/favicon-mercado-liebre.svg" type="image/x-icon">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/d5c465f7b6.js" crossorigin="anonymous"></script>
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/
-<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
+    <header class="fixed-header">
         <div class="logo-container">
             <img class="logo" src="/img/logo-mercado-liebre.svg" alt="">
-            <div class="search-bar">
+            <!-- <form class="search-bar">
                 <input class="barra-busqueda" type="text" placeholder="Buscar productos, marcas y más">
                 <button class="lupa"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </div>
+            </form> -->
         </div>
         <div class="nav-title"><i class="fa-solid fa-hand-holding-dollar"></i>
             <p>Comprá en cuotas y sin tarjeta de crédito</p>
@@ -32,34 +35,27 @@
                 <li><a href="#"> Vender </a></li>
                 <li><a href="https://www.mercadolibre.com.ar/"> Ayuda </a></li>
             </ul>
-
             <ul class="right-nav-bar">
-                <li><a href="/register"> Crea tu Cuenta</a></li>
-                <li><a href="#"> Ingresa </a></li>
-                <li><a href="#"> Mis Compras </a></li>
+                <li><a href="/register"> Crea tu Cuenta<i class="fa-regular fa-id-card"></i></a></li>
+                <li><a href="/login"> Ingresa <i class="fa-solid fa-arrow-right-to-bracket"></i></a></li>
+                <li><a href="#"> Mis Compras<i class="fa-solid fa-cart-shopping"></i> </a></li>
             </ul>
         </nav>
         <div class="burger-menu"><i class="fas fa-bars"></i></div>
     </header>
-    <main>
-
- <!-- formulario register -->
-
- <form class="formulario" action="/login" method="POST">
-    <div class="login-url"><a href="#">  Ya tengo una cuenta</a><a href="#">/info/seguridad</a></div>
-    <section class="nombre-usuario-email-fecha-domicilio"><div class="title"><h1>Register</h1></div>
-        <div class="usuario">
-            <input class="elegitucontraseña"  type="text" placeholder="Nombre y apellido" name="nombreyapellido" id="nombreyapellido">
-        </div>
-        <div class="contraseña">
-            <input class="elegitucontraseña"  type="text" placeholder="elegitucontraseña" name="elegitucontraseña">
-        </div>
-    </section>
-</form>
-
-    <!--    formulario register     -->
-       
-
+    <main class="main-login">
+        <form class="formulario-login" action="/login" method="post">
+            <span><h2 class="login-titulo">Login</h2></span>
+            <div class="usuario-registrado">
+                <label for="" class="login-label"> Nombre de usuario </label>
+                <input type="text" type="email" placeholder="Usuario o Mail">
+            </div>
+            <div class="contraseña-input">
+                <label for="" class="login-label">Contraseña</label>
+                <input type="password">
+            </div>
+            <input type="submit" class="login-submit-button">
+        </form>
     </main>
     <footer class="footer">
         <div class="footer-content">
@@ -81,7 +77,7 @@
         </div>
 
         <div class="footer-content">
-            <div class="footer-icon"><i class="fa-solid fa-user-shield"></i>|</div>
+            <div class="footer-icon"><i class="fa-solid fa-user-shield"></i></div>
             <div>
                 <p> Seguridad, de principio a fin
                     ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,

@@ -9,7 +9,7 @@ const publicPath = path.resolve(__dirname, "../public");
 
 app.use(express.static(publicPath));
 
-// app.listen(3000, () =>            ESTE COMANDO ES PARA EL LOCALHOST O SERVIDOR LOCAL QUE MODIFIQUE EN LA LINEA DE ABAJO PARA QUE SE CONECTE AL RENDER, EL SERVIDOR REMOTO GRATUITO
+// app.listen(3000, () =>            ESTE COMANDO ES PARA GUARDAR EN LA VARIABLE PORT EL LOCALHOST O SERVIDOR   LOCAL QUE MODIFIQUE EN LA LINEA DE ABAJO PARA QUE SE CONECTE AL RENDER, EL SERVIDOR REMOTO GRATUITO
 //     console.log("Tamo en vivo mi brothel: http://localhost:3000/")
 // );
 

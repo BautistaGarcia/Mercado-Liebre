@@ -1,416 +1,57 @@
-* {
-
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
 }
 
-html,
-body {
-
-    margin: 0;
-    padding: 0;
-    background-color: #ebebeb;
-
-}
-
-
-
-
-/* NAVEGADOR */
-
-.fixed-header {
-    position: fixed;
-    z-index: 2;
-    top: 0;
-
-}
-
-.banner-container,
-.main {
-    margin-top: 180px;
-    margin-bottom: 1rem;
-
-}
-
-header {
+.main-login {
     display: flex;
-    width: 100%;
-    background-color: #eac926;
-    padding: 0.5rem;
+
+}
+
+.formulario-login {
+    display: flex;
     flex-direction: column;
-}
+    /* flex properties */
 
-
-.logo-container {
-    width: 100%;
-    display: flex;
-    margin-bottom: 5px;
-
-}
-
-.logo {
-    width: 50%;
-    padding-right: 1rem;
-}
-
-.search-bar {
-    width: 40%;
-    display: flex;
-    align-items: center;
-    margin-right: 0px;
-    padding-left: 2rem;
-}
-
-.barra-busqueda {
-    width: 90%;
-    height: 2rem;
-    border: none;
-}
-
-.lupa {
-    height: 2rem;
-    width: 2rem;
-    background-color: #fff;
-    border: none;
-}
-
-.fa-magnifying-glass {
-    color: #eac926;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border-radius: 25px;
+    background-color: #bebebe;
 
 }
 
-.nav-title {
+.login-titulo {
     display: flex;
     justify-content: center;
-    text-align: center;
-    width: 100%;
-    font-style: bold;
-    margin-bottom: 0.5rem;
-
+    margin: 1rem;
+    color: #1259c3;
 }
 
-.nav-bar {
-    display: none;
-    width: 100%;
-    flex-wrap: nowrap;
-    margin-top: 15px;
-    justify-content: space-between;
-}
-
-.left-nav-bar {
+.usuario-registrado {
     display: flex;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    align-items: flex-start;
-    width: 40%;
-    padding: 0;
-    justify-content: space-between;
+    margin: 1rem;
 }
 
-.right-nav-bar {
+.contraseña-input {
     display: flex;
     justify-content: flex-end;
-    flex-wrap: nowrap;
-    align-items: flex-end;
-    width: 40%;
-    padding: 0;
-    justify-content: space-between;
+    margin: 1rem;
+
 }
-
-.burger-menu {
-    width: 1.5rem;
-    text-align: center;
-    margin: auto;
-}
-
-
-.fa-bars {
-    padding: 10px;
-    background-color: #1259c3;
-    color: white;
-    border-radius: 5px;
-}
-
-.fa-magnifying-glass {
-    width: 1.5rem;
-}
-
-ul a,
-li {
-    display: flex;
-    list-style: none;
-    text-decoration: none;
-}
-
-/* NAVEGADOR */
-
-
-
-
-
-/* MAIN */
-
-
-
-
-
-
-
-/* MAIN */
-
-
-
-
-
-
-
-
-/* FOOTER */
-
-
-.footer {
-    width: 100%;
+.login-submit-button {
     display: flex;
     justify-content: center;
-    padding-left: 0.5rem;
-    padding-bottom: 0.5rem;
+    align-self: center;
+
+    width: 25%;
+    margin: 1rem;
 
 }
 
-.footer .footer-content {
-    width: 30%;
-
-}
-
-.footer-content i {
-    display: flex;
-    font-size: 50px;
-    justify-content: space-around;
-    text-align: center;
-    align-items: center;
-    align-content: center;
-    flex-direction: row;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    margin-right: 2.5rem;
-    padding-right: 0.5rem;
-
-}
-
-.footer-icon {
-    width: 100%;
-    height: 80px;
-    border-bottom: 0.1rem solid;
-    color: gray;
-
-}
-
-.copyright-footer {
-    text-align: center;
-    margin-bottom: 0.5rem;
-    padding-top: 1rem;
-}
-
-
-
-
-
-
-
-
-
-
-
-/* MEDIA QUERIES */
-
-
-
-@media(min-width:769px) {
-    /* tablets */
-
-    .banner-container,
-    .main {
-        margin-top: 210px;
-        margin-bottom: 1rem;
-
-    }
-
-    .nav-bar {
-        display: flex;
-
-    }
-
-    .burger-menu {
-        display: none;
-
-    }
-
-    .barra-busqueda {
-        width: 100%;
-
-    }
-
-    .logo-container {
-        align-items: center;
-        justify-content: space-around;
-    }
-
-    .logo {
-        padding-right: 0rem;
-        padding: 1rem;
-
-    }
-
-    .search-bar {
-        display: flex;
-        width: 30%;
-    }
-
-    .lupa {
-        width: 2rem;
-
-    }
-
-    .principal,
-    .second-section {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-around;
-        align-self: center;
-        align-items: flex-start;
-
-        /* flex properties */
-
-        gap: 5px;
-        width: 100%;
-        margin-top: 1rem;
-        margin-bottom: 0rem;
-
-    }
-
-    .card-content img {
-        width: 95%;
-        gap: 0.5rem;
-    }
-
-
-    .card {
-        margin-bottom: 2rem;
-        width: 45%;
-
-    }
-
-    /* animacion box-shadow para tablet en adelante*/
-    .card-content:hover {
-        box-shadow: 0px 0px 20px rgba(100, 100, 100);
-        transform: scale(1.2);
-        background-color: #fff;
-    }
-    .card-content:hover .fa-truck {
-        transform: rotate(90 right);
-    }
-
-    .card-content:hover .image-description {
-        display: flex;
-        margin-bottom: 0.5rem;
-    }
-
-    .footer-icon:hover {
-        color: #1259c3;
-        /* size: 50px; */
-    }
-
-    /* ( le aplique las animaciones x separado a la 
-                                                                img de la card y a la card, para generarbien el
-                                                     efecto de card y la animacion a la card y no a la a imagen  ) */
-
-    /* animaciones */
-
-}
-
-
-
-@media(min-width:1024px) {
-    /* desktop */
-
-    .banner-container,
-    .main {
-        margin-top: 200px;
-        margin-bottom: 1rem;
-
-    }
-
-    .header {
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-
-    }
-
-    .nav-bar {
-        display: flex;
-
-    }
-
-    .burger-menu {
-        display: none;
-
-    }
-
-    .barra-busqueda {
-        width: 10rem;
-
-    }
-
-    .logo-container {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-
-    .logo {
-        width: 30%;
-        display: flex;
-        justify-self: center;
-        align-self: center;
-        padding-right: 0;
-    }
-
-    .search-bar {
-        display: flex;
-        justify-self: flex-end;
-        align-self: flex-end;
-        /* flex properties */
-
-        width: 5%;
-
-    }
-
-    .cabecera-seccion2 {
-        margin-bottom: 2rem;
-
-    }
-
-    .card {
-        width: 20%;
-
-    }
-
-    .banner-container img {
-        margin-bottom: 15px;
-
-    }
-
-    .descuento {
-        padding-left: 0rem;
-
-    }
+.login-label {
+    margin: 5px;
 
 }
